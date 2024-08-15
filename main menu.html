@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #4f5b9f;
+            margin: 0;
+            padding: 80.2px;
+        }
+        title {
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            background-color: #4f5b9f;
+            margin: 0;
+            padding: 70px;
+        }
+        content {
+            font-size: 16;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            background-color: #4f5b9f;
+            margin: 0;
+            padding: 70px;
+        }
+        h1 {
+            color: #333;
+        }
+        .spurf{
+            height: 60px;
+            width : 175px;
+            outline: #333;
+            line-height: normal;
+            color: rgb(255, 232, 193);
+            background-color: rgb(175, 157, 132);
+            box-sizing: border-box;
+            font-size: larger;
+            text-emphasis-color: gold;
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(32, 29, 41);
+            text-decoration: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: none; 
+            margin: 0 auto;
+            
+        }
+
+        .farm{
+            height: 230px;
+            width : 440px;
+            line-height: normal;
+            box-sizing: border-box;
+            font-size: larger;
+            border-width: 2px;
+            border-radius: 10%;
+            background-size: cover;
+            background:url(1.png);
+            margin-top: 12px;
+            margin-left: 12px;
+            margin-bottom: 12px;
+            margin-right: 12px;
+            
+        }
+
+        .horr{
+            height: 230px;
+            width : 440px;
+            line-height: normal;
+            box-sizing: border-box;
+            font-size: larger;
+            border-width: 2px;
+            border-radius: 10%;
+            background-size: cover;
+            background:url(7.png);
+            margin-top: 12px;
+            margin-left: 12px;
+            margin-bottom: 12px;
+            margin-right: 12px;
+            
+        }
+
+        .visn{
+            height: 230px;
+            width : 440px;
+            line-height: normal;
+            box-sizing: border-box;
+            font-size: larger;
+            border-width: 2px;
+            border-radius: 10%;
+            background-size: cover;
+            background:url(5.png);
+            margin-top: 12px;
+            margin-left: 12px;
+            margin-bottom: 12px;
+            margin-right: 12px;
+            
+        }
+
+        .adve{
+            height: 230px;
+            width : 440px;
+            line-height: normal;
+            box-sizing: border-box;
+            font-size: larger;
+            border-width: 2px;
+            border-radius: 10%;
+            background-size: cover;
+            background:url(3.png);
+            margin-top: 12px;
+            margin-left: 12px;
+            margin-bottom: 12px;
+            margin-right: 12px;
+            
+        }
+        
+        
+        .game-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: nowrap;}
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;}
+
+
+
+        
+            
+        .spurf:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+        }
+
+        .farm:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('2.png');
+        }
+        
+        .visn:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('6.png');
+        }
+
+        .horr:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('8.png');
+        }
+
+        .adve:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('4.png');
+        }
+
+        
+    </style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#surpriseButton').on('click', function() {
+            const pages = ["martin.html", "lodger.html", "173.html"];
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        });
+    });
+    </script>
+</head>
+<body>
+
+    <h1>Swampy Frog Games ⚓</h1>
+
+    <div class="button-container">
+    <a class="spurf" href="main menu.html">Home</a>
+    <a class="spurf" href="about.html">About Us </button>
+    <a class="spurf" href=".html">Developers</a>
+    <a id="surpriseButton" class="spurf">Surprise Me!</a>
+</div>
+
+<div class="game-container">
+    <a href="farmfarm.html">
+        <button class="farm"></button>
+    </a>
+   
+    <a href="horrorhorror.html">
+        <button class="horr"> </button>
+    </a>
+</div>
+</body>
+</html>

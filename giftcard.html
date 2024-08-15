@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giftcardz</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#submitBtn").click(function() {
+                var giftCode = $("#giftcodeInput").val();
+                var validGiftCode = "126700";
+
+                if (giftCode === validGiftCode) {
+                    window.location.href = "martin.html";
+                } else {
+                    alert("giftcode invalid or expired");
+                }
+            });
+
+            $("#giftcodeInput").keypress(function(event) {
+                if (event.which === 13) { 
+                    $("#submitBtn").click();
+                }
+            });
+        });
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4f5b9f;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        input[type="password"] {
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px; 
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
+            background-color: #fff; 
+        }
+        .spurf {
+            height: 60px;
+            width: 175px;
+            outline: #333;
+            line-height: normal;
+            color: rgb(255, 232, 193);
+            background-color: rgb(175, 157, 132);
+            box-sizing: border-box;
+            font-size: larger;
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: none; 
+            margin: 10px auto;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .spurf:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Giftcard Number</h1>
+        <input type="password" id="giftcodeInput" placeholder="Enter Giftcode Here">
+        <a class="spurf" id="submitBtn">Submit</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #4f5b9f;
+            margin: 0;
+            padding: 80.2px;
+        }
+        h1 {
+            color: #333;
+        }
+        .spurf{
+            height: 60px;
+            width : 175px;
+            outline: #333;
+            line-height: normal;
+            color: rgb(255, 232, 193);
+            background-color: rgb(175, 157, 132);
+            box-sizing: border-box;
+            font-size: larger;
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(32, 29, 41);
+            text-decoration: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: none; 
+            margin: 0 auto;
+        }
+
+        .HORRORONE, .HORRORTWO, .HORRORTHREE {
+            height: 230px;
+            width: 440px;
+            line-height: normal;
+            box-sizing: border-box;
+            font-size: larger;
+            border-width: 2px;
+            border-radius: 10%;
+            background-size: cover;
+            margin: 12px;
+            position: relative;
+        }
+
+        .HORRORONE {
+            background-image: url(HORROR1T.png);
+        }
+
+        .HORRORTWO {
+            background-image: url(HORRORT2.png);
+        }
+        .HORRORTHREE {
+            background-image: url(HORRORT3.png);
+        }
+
+        .price {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: aliceblue;
+            font-size: 20px;
+            background-color: #4f5b9f;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+            height: 40px;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: nowrap;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+
+        .spurf:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+        }
+
+        .HORRORONE:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('HORROR1.png');
+        }
+
+        .HORRORTWO:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('HORROR2.png');
+        }
+
+        .HORRORTHREE:hover {
+            background-color: rgb(236, 223, 151);
+            box-shadow: 0 0 15px 5px rgba(255, 202, 26, 0.8);
+            background-image: url('HORROR3.png');
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Swampy Frog Games ⚓</h1>
+
+    <div class="button-container">
+        <a class="spurf" href="main menu.html">Home</a>
+        <a class="spurf" href="about.html">About Us</a>
+        <a class="spurf" href="main menu copy.html">Developers</a>
+        <a class="spurf">Surprise Me!</a>
+    </div>
+
+    <div class="game-container">
+        
+        
+
+        <a href="173.html">
+            <button class="HORRORONE">
+                <div class="price">$0.00</div>
+            </button>
+            </a>
+
+        <a href="giftcard.html">
+            <button class="HORRORTWO">
+                <div class="price">$1.49</div>
+            </button>
+        
+        </a>
+        <a href="lodger.html">
+            <button class="HORRORTHREE">
+                <div class="price">$0.00</div>
+            </button>
+    </div>
+</body>
+</html>
